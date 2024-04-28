@@ -46,7 +46,7 @@ main .foreground {
 main .description {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 main .description h1 {
@@ -76,7 +76,6 @@ main .description .details {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    margin-bottom: 20px;
 }
 
 main .description .details .detail {
@@ -122,6 +121,10 @@ main .description .details .detail span {
         flex-direction: row;
         justify-content: space-between;
     }
+
+    main .description .details .detail {
+        align-items: flex-start;
+    }
 }
 
 @media(min-width: 1000px) {
@@ -138,7 +141,6 @@ main .description .details .detail span {
     }
 
     main .description .details {
-        justify-content: flex-start;
         gap: 50px;
     }
 }
