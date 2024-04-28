@@ -46,6 +46,7 @@ main .foreground {
 main .description {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     padding: 40px 20px;
 }
 
@@ -117,10 +118,17 @@ main .description .details .detail span {
         border-radius: 0 10px 10px 0;
     }
 
+    main .description p {
+        margin-bottom: 0;
+    }
+
     main .description .details {
         flex-direction: row;
-        justify-content: space-between;
+        flex: 1;
+        justify-content: flex-start;
+        align-items: flex-end;
     }
+
 
     main .description .details .detail {
         align-items: flex-start;
@@ -156,7 +164,11 @@ main .description .details .detail span {
     }
 
     main .description {
-        padding: 90px;
+        padding: 50px 90px;
+    }
+    
+    main .description h1 {
+        margin-bottom: 30px;
     }
 
     main .description .details .detail {
